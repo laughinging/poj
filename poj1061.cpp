@@ -39,7 +39,6 @@ int main(){
     long long u, v, g;
     g = ext_euclid(a, b, &u, &v);
     u *= d / t;
-    b /= t;
-    printf("%lld\n", (x % b + b) % b);
+    printf("%lld\n", (u % b + b) % b);
     return 0;
 }
